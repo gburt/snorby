@@ -19,7 +19,7 @@ class Tcp
   
   property :tcp_dport, Integer, :index => true, :min => 0
 
-  property :tcp_seq, Integer, :lazy => true, :min => 0
+  property :tcp_seq, Integer, :lazy => true, :min => 0, :max => 2**63-1
   
   property :tcp_ack, Integer, :lazy => true, :min => 0
   
